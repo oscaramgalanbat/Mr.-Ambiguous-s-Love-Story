@@ -12,7 +12,7 @@ menuState.prototype = {
   create: function () {
 
     // Add some text
-    game.add.text(235, 250, "Press any key to begin", { fontSize: "32px", fill: "#fff" });
+    game.add.text(235, 250, "Click to begin", { fontSize: "32px", fill: "#fff" });
 
     // Start the game when a key is pressed
     document.addEventListener("keydown", function (e) {
