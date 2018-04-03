@@ -1,4 +1,4 @@
-# Mr. Ambiguous's Love Story
+# BootlegDating
 
 Starting a Python server: 
 1) cd to game directory in terminal
