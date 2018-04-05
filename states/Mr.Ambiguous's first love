@@ -3,7 +3,7 @@
 console.log("Taiga Aisaka")
 var human ={
 race : 'Japanese'
-age : '23'
+age : '17'
 hair color : 'light brown'
 eye color : 'hazel'
 skin tone : 'light'
