@@ -6,8 +6,16 @@ Starting a Python server:
 3) point browser to localhost:8000 
 
 
+## Resources
+
+- piskel for image editing
+
 ## TODO
-- research clicking on a sprite [Rowin] and implement clicking with input.mousePointer. Here are some resources to help:
+
+- Add more game states
+-add more sprites
+
+~~- research clicking on a sprite [Rowin] and implement clicking with input.mousePointer. Here are some resources to help:~~
   + https://phaser.io/examples/v2/basics/02-click-on-an-image
   + https://stackoverflow.com/questions/25606006/phaser-attach-touch-event-on-sprite
 - change background color 

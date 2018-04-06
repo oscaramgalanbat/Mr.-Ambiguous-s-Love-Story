@@ -1,22 +1,22 @@
 /**
- * game.js 
+ * confession.js 
  *
- * This state represents the in-game action
+ * This state represents the start of a relationship
  */
-const gameState = {
+const confessionState = {
 
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
     game.load.image('button', 'assets/button.png');
-    game.load.image('button_1', 'assets/button_1.png');
   },
 
   /**
    * Initializes variables and instantiates objects
    */
   create: function () {
+      
 
     // Add some text
     text = game.add.text(300, 80, '', { fontSize: '32px', fill: '#fff' });
@@ -31,17 +31,6 @@ const gameState = {
     button.events.onInputDown.add(function () {
       game.state.start('menu');
     }, this);
-      
-    // Add the button image to the middle of the screen and enable input
-    const button_1 = game.add.sprite(400, 505, 'button_1');
-    button_1.anchor.set(0.5);
-    button_1.inputEnabled = true;
-    button_1.input.useHandCursor = true;  // Change cursor style on mouseover
-
-    // Add a function to the button to be called when the button is clicked
-    button_1.events.onInputDown.add(function () {
-      game.state.start('confession');
-    }, this);
   },
 
   /** 
@@ -55,4 +44,4 @@ const gameState = {
       '  y: ' + game.input.mousePointer.y
     );
   }
-}; // end gameState
+}; // end confessionState
