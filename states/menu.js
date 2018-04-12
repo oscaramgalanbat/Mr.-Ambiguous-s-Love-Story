@@ -41,7 +41,7 @@ const menuState = {
 
     // Check for mouse click and switch state to the game state when
     if (game.input.activePointer.leftButton.isDown) {
-      game.state.start("game");
+      game.state.start("school");
     }
   }
 }; // end menuState
