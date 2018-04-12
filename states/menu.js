@@ -9,7 +9,7 @@ const menuState = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload : function () {
-    game.load.image('intro background','assets/game_background.jpg');
+    game.load.image('intro_background','assets/game_background.jpg');
     // Enable mouse
     game.input.mouse.capture = true;
   },
@@ -18,7 +18,7 @@ const menuState = {
    * Initializes variables and instantiates objects
    */
   create: function () {
-    var i = game.add.image(game.world.centerX, game.world.centerY, 'intro background')
+    var i = game.add.image(game.world.centerX, game.world.centerY, 'intro_background')
     i.anchor.set(0.5)
     // Add some text
     game.add.text(

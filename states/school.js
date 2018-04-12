@@ -3,12 +3,13 @@
  *
  * This state represents the in-game action
  */
-const gameState = {
+const schoolState = {
 
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
+    game.load.image('school_background','assets/school_background.jpg')
     game.load.image('button', 'assets/button.png');
     game.load.image('button_1', 'assets/button_1.png');
   },
@@ -20,8 +21,13 @@ const gameState = {
 
     // Add some text
     text = game.add.text(300, 80, '', { fontSize: '32px', fill: '#fff' });
-
-    // Add the button image to the middle of the screen and enable input
+     
+      const school_background = game.add.sprite(game.world.centerX, game.world.centerY, 'school_background');
+    school_background.anchor.set(0.5);
+    school_background.inputEnabled = true;
+    school_background.input.useHandCursor = true; 
+   
+      // Add the button image to the middle of the screen and enable input
     const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
     button.anchor.set(0.5);
     button.inputEnabled = true;
@@ -32,13 +38,11 @@ const gameState = {
       game.state.start('menu');
     }, this);
       
-    // Add the button image to the middle of the screen and enable input
     const button_1 = game.add.sprite(400, 505, 'button_1');
     button_1.anchor.set(0.5);
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover
 
-    // Add a function to the button to be called when the button is clicked
     button_1.events.onInputDown.add(function () {
       game.state.start('confession');
     }, this);
