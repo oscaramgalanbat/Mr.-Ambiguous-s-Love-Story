@@ -21,10 +21,11 @@ const confessionState = {
       var i = game.add.image(game.world.centerX, game.world.centerY, 'conf')
     i.anchor.set(0.5)
       
-      const button_1 = game.add.sprite(400, 100, 'button_1');
+      const button_1 = game.add.sprite(400, 45, 'button_1');
     button_1.anchor.set(0.5);
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover
+    button_1.scale.setTo(1.2,0.5);
 
     button_1.events.onInputDown.add(function () {
       game.state.start('just_friends');
