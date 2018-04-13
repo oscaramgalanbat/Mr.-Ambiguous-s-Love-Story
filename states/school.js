@@ -27,7 +27,7 @@ const schoolState = {
     school_background.inputEnabled = true;
     school_background.input.useHandCursor = true; 
    
-      // Add the button image to the middle of the screen and enable input
+     /* // Add the button image to the middle of the screen and enable input
     const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
     button.anchor.set(0.5);
     button.inputEnabled = true;
@@ -36,9 +36,9 @@ const schoolState = {
     // Add a function to the button to be called when the button is clicked
     button.events.onInputDown.add(function () {
       game.state.start('menu');
-    }, this);
+    }, this);*/
       
-    const button_1 = game.add.sprite(400, 505, 'button_1');
+    const button_1 = game.add.sprite(300, 400, 'button_1');
     button_1.anchor.set(0.5);
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover

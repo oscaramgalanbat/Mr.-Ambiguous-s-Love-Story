@@ -20,8 +20,17 @@ const confessionState = {
   create: function () {
       var i = game.add.image(game.world.centerX, game.world.centerY, 'conf')
     i.anchor.set(0.5)
+      
+      const button_1 = game.add.sprite(400, 100, 'button_1');
+    button_1.anchor.set(0.5);
+    button_1.inputEnabled = true;
+    button_1.input.useHandCursor = true;  // Change cursor style on mouseover
 
-    // Add some text
+    button_1.events.onInputDown.add(function () {
+      game.state.start('just_friends');
+    }, this);
+
+    /*// Add some text
     text = game.add.text(300, 80, '', { fontSize: '32px', fill: '#fff' });
 
     // Add the button image to the middle of the screen and enable input
@@ -35,7 +44,7 @@ const confessionState = {
     // Add a function to the button to be called when the button is clicked
     button.events.onInputDown.add(function () {
       game.state.start('menu');
-    }, this);
+    }, this);*/
   },
 
   /** 

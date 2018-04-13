@@ -4,7 +4,7 @@ Starting a Python server:
 1) cd to game directory in terminal
 2) type: python -m SimpleHTTPServer
 3) point browser to localhost:8000 
-4)  cd desktop, cd that-dating-sim/ , git add . ,git commit -m "hello"
+4)  cd desktop, cd that-dating-sim/ , git add . ,git commit -m "hello" , git push origin master
 
 ## Resources
 
