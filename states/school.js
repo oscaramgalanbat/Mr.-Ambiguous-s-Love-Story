@@ -10,7 +10,6 @@ const schoolState = {
    */
   preload: function () {
     game.load.image('school_background','assets/school_background.jpg')
-    game.load.image('button', 'assets/button.png');
     game.load.image('button_1', 'assets/button_1.png');
   },
 
@@ -24,7 +23,7 @@ const schoolState = {
      
       const school_background = game.add.sprite(game.world.centerX, game.world.centerY, 'school_background');
     school_background.anchor.set(0.5);
-    school_background.inputEnabled = true;
+    school_background.inputEnabled = false;
     school_background.input.useHandCursor = true; 
    
      /* // Add the button image to the middle of the screen and enable input
